@@ -4,6 +4,21 @@ public class RomanNumerals {
 	public String toRoman(int number) {
 		String toRoman = "";
 		
+		if(number>899)
+		{
+			while(number>=1000)
+			{
+				toRoman+="M";
+				number-=1000;
+			}
+			if(number>=900)
+			{
+				toRoman+="CM";
+				number-=900;
+			}
+		}
+		
+		
 		if(number>399)
 		{
 			while(number>=500)
