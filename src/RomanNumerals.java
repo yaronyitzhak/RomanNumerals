@@ -2,7 +2,7 @@
 public class RomanNumerals {
 
 	public String toRoman(int number) {
-		String toRoman="";
+		String toRoman = "";
 		if(number>3)
 		{
 			while(number>=5)
