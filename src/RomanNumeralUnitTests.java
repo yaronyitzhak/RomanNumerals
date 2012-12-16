@@ -11,7 +11,7 @@ public class RomanNumeralUnitTests {
 	public void testThat1ReturnsI() {
 		assertEquals("I", number.toRoman(1));
 		assertEquals("II", number.toRoman(2));
-		assertEquals("V", number.toRoman(5));
+		assertEquals("X", number.toRoman(10));
 	}
 	
 
