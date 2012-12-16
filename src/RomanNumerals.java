@@ -4,6 +4,21 @@ public class RomanNumerals {
 	public String toRoman(int number) {
 		String toRoman = "";
 		
+		if(number>399)
+		{
+			while(number>=500)
+			{
+				toRoman+="D";
+				number-=500;
+			}
+			if(number>=400)
+			{
+				toRoman+="CD";
+				number-=400;
+			}
+		}
+		
+		
 		
 		if(number>89)
 		{
