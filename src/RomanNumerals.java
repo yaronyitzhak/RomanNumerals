@@ -5,6 +5,20 @@ public class RomanNumerals {
 		String toRoman = "";
 		
 		
+		if(number>89)
+		{
+			while(number>=100)
+			{
+				toRoman+="C";
+				number-=100;
+			}
+			if(number>=90)
+			{
+				toRoman+="XC";
+				number-=90;
+			}
+		}
+		
 		if(number>39)
 		{
 			while(number>=50)
